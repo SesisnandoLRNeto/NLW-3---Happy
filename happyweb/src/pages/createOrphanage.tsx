@@ -55,7 +55,6 @@ export default function CreateOrphanage() {
     await api.post('/orphanages', data)
 
     alert('Cadastro Realizado com sucesso')
-
     history.push('/app')
   }
 
@@ -96,7 +95,7 @@ export default function CreateOrphanage() {
                 (
                   <Marker interactive={false} icon={MapIcon} position={[position.latitude,position.longitude]} />  
                 ):
-                  null //&& se a condicao tem else como null pode ser substituido o ?
+                  null //se a condicao tem else como null pode ser substituido o ? por &&
               }
           
             </Map>
@@ -130,7 +129,6 @@ export default function CreateOrphanage() {
                   <FiPlus size={24} color="#15b6d6" />
                 </label>
 
-               
               </div>
               <input multiple onChange={handleSelectImages} type="file" id='image[]'/>
             </div>

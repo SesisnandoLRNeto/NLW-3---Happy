@@ -39,7 +39,7 @@ export default {
         about,
         instructions,
         opening_hours,
-        open_on_weekends: open_on_weekends === 'true',
+        open_on_weekends: open_on_weekends === 'true',//para que seja convertido o boolean em string pelo form do frontend
         images
     }
     const schema = Yup.object().shape({
